@@ -9,7 +9,7 @@ root = Tk()
 root.title('Clock')
 
 def time():
-    string = strftime('%H:%M:%S %p')
+    string = strftime('%I:%M:%S %p')
     label.config(text=string)
     label.after(1000, time)
 
